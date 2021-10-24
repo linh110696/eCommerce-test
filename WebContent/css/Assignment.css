@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+}
+.login {
+	background: #00ffff;
+}
+/* Header/Blog Title */
+.header {
+	padding: 30px;
+	text-align: center;
+	height: 120px;
+}
+.header headerleft h1 {
+	font-size: 40px;
+}
+.headerleft {
+	float: left;
+	width: 20%;
+	padding: 0px;
+	margin-top:-30px;
+}
+.headerright {
+	float: left;
+	width: 80%;
+}
+.searchbar {
+ 	display: inline-block;
+ 	width: 100%;
+ 	margin: 0;
+}
+.searchbar * {
+	height: 35px;
+	border: 1px  #333333;
+}
+.selectcategories {
+	float: left;
+	width: 20%;
+	border-radius: 3px 0 0 3px;
+}
+
+.itemname{
+	float: left;
+	width: 75%;
+	border-radius: 0 3px 3px 0;
+}
+.searchbutton{
+	float: left;
+	background-color: #ee8824;
+}
+/* Style the top navigation bar */
+.topnav {
+	overflow: hidden;
+	background-color: #333333;
+	width: 100%;
+}
+
+/* Style the topnav links */
+.topnav a {
+	float:left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+	background-color: #dddddd;
+	color: #000000;
+}
+/*Style the login page*/
+.greenbutton {
+	color: #ffffff;
+	background-color: #67AC5B;
+	border: hidden;
+	height: 30px;
+	width: 100px;
+	border: 1px #67AC5B;
+	border-radius: 10px;
+}
+.forgotpassword {
+	text-decoration: none;
+	color: #000000;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+	float: left;
+	width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+	float: left;
+	width: 25%;
+	padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+	background-color: #aaa;
+	width: 100%;
+	padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+	background-color: #ffffff;
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 5%
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Footer */
+.footer {
+	padding: 20px;
+	text-align: center;
+	color: #f1f1f1;
+	margin-top: 20px;
+	border-top: 2px solid #f2f2f2;
+	background: #282A35;
+}
+.loginpage {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50%);
+	width: 600px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.loginpageleft {
+	float:left;
+	width: 50%;
+	text-align: center;
+	background: #f1f1f1;
+}
+.loginform input[type="text"], input[type="password"]{
+	width: 80%;
+	font-size: 15px;
+	padding: 5px;
+	border-radius: 2px;
+	border: 1px #333333;
+}
+.loginform *{
+	padding: 10px 0;
+}
+
+.loginpageright {
+	float: left;
+	width: 50%;
+	text-align: center;
+	background: #0f1130;
+}
+.loginrighttext{
+	position: absolute;
+	margin: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #f1f1f1;
+}
+.welcome {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50%);
+	height: 100px;
+	width: 200px;
+	text-align:center;
+	background: #f2f2f2;
+	border:none;
+	border-radius: 5px;
+}
+.welcome p{
+	position: absolute;
+	top: 35%;
+	width: 100%;
+	transform: translateY( -50%);
+	color: #333333;
+}
+table caption {
+	text-align: left;
+	height: 30px;
+	padding: 20px;
+	background: #7e2c9f;
+	margin: 10px;
+	border: none;
+	border-radius: 3px;
+}
+}
+table tr th, td{
+	text-align: center;
+	padding-top: 10px;
+}
+table{
+	border-collapse: collapse;
+}
+table tr{
+	height: 30px;
+	padding: 20px;
+	border-top: 1px solid #f2f2f2;
+}
+.loggedinpage {
+	padding: 0px;
+	background: #1a2034;
+	color: #f2f2f2;
+}
+.loggedinleft {
+	float: left;
+	width: 20%;
+	height: 100vh;
+	background: #283044;
+}
+.loggedinright {
+	float: left;
+	width: 80%;
+	height: 100vh;
+	padding: 0 20px;
+}
+.info {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	display: inline;
+}
+
+/*Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px){
+	.leftcolumn, .rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+}
+/*Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px){
+	.topnav a {
+		float: none;
+		width: 100%;
+	}
+}
